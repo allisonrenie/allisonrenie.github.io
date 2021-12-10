@@ -1,0 +1,8 @@
+body {
+  background-image: url("waves.gif");
+  color: white;
+  font-family: FreeMono, monospace;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
