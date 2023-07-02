@@ -71,6 +71,26 @@
         font-size: 16px;
         text-align: left;
       }
+
+
+      .menu {
+      display: flex;
+    }
+
+    .menu-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+      max-height: 50px;
+      border: 2px solid black;
+    }
+
+
+
     </style>
 
   </head>
@@ -79,22 +99,56 @@
 
     <p id="name"> Allison Renie Thompson </p>
 
-    <a class="link" href="resume_feb_23.pdf">PDF of my resume</a>
+    <!-- <a href="page1.html">
+      <img src="aboutme.png" alt="Link to Page 1">
+    </a>
+    <p></p>
+    <a href="page2.html">
+      <img src="projects.png" alt="Link to Page 2">
+    </a>
+    <p></p>
+    <a class="link" href="ART_resume_june23.pdf">PDF of my resume</a>
     <p></p>
     <a class="link"href="https://www.linkedin.com/in/allison-thompson-182891249/">My LinkedIn profile</a>
+    <p></p> -->
+    
 
-    <p id="header"> About me </p>
-    <p id="para"> Hi! I am currently pursuing an Honors Bachelor of Science in Computer Science at Oregon State University
-      with an applied option in Simulation and Game Programming and a minor in English. I have a 3.86 GPA. I'm going to graduate in June of 2023.
-      I graduated valedictorian from Hood River Valley High School with a 4.0 GPA in 2019. Currently, I work for Oregon
-      State University as a Undergraduate Learning Assistant (ULA) for ENGR102, where I help run studio sessions and work with
-      students through labs and problems. I have also previously been a ULA for ENGR100. </p>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="page1.html">
+          <img src="aboutme.png" alt="Link to Page 1">
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="page2.html">
+          <img src="resumelink.png" alt="Link to Page 2">
+        </a>
+      </div>
+
+      <div class="menu-item">
+        <a href="page3.html">
+          <img src="li.png" alt="Link to Page 2">
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- <p id="header"> About me </p>
+    <p id="para"> Hi! I just graduated (June 2023) from Oregon State University with an Honors BS in Computer Science and a minor in English. I graduated Summa
+      Cum Laude with a 3.86 GPA. My focus area was in Simulation and Game Programming, which for me meant simulations and graphics generally. I've spent the most
+      time studying graphics and love the challenge and satisfaction of seeing something I programmed move onscreen!
+    </p>
 
     <p id="header"> Interests </p>
     <p id="para"> I'm intersted in graphics, physics, simulations, robotics, and where art and computer science meet.
     I am most interested in backend graphics, especially when they relate to the real world or real world physics.
     I am also very interested in the natural world and how to replicate it using computer graphics. Outside of computer
-    science, I enjoy reading, sewing, video games (The Witcher 3, Fortnite, Castlevania: Symphony of the Night), hiking, drawing, and learning.  </p>
+    science, I enjoy reading, sewing, video games (The Witcher 3, Castlevania: Symphony of the Night), hiking, drawing, and learning.  </p>
 
 
     <p id="header"> Skills </p>
@@ -111,18 +165,30 @@
         <ul>
           <li id="listitem"> OpenMP, SIMD, CUDA, OpenCL </li>
           <li id="listitem"> Vulkan </li>
-          <li id="listitem"> Python, Java, HTML, CSS, JavaScript, R, Rust, MASM </li>
+          <li id="listitem"> Rust (learning right now!), Python, Java, HTML, CSS, JavaScript, R, MASM </li>
           <li id="listitem"> Krita </li>
           <li id="listitem"> GIMP </li>
           <li id="listitem"> Blender </li>
-          <li id="listitem"> Bevy </li>
-          <li id="listitem"> Unreal Engine 5 basics, self taught from the internet </li>
+          <li id="listitem"> Bevy Game Engine (an Open Source Rust based game engine) </li>
+          <li id="listitem"> Unreal Engine 5 basics (self taught from the internet) </li>
         </ul>
-    </div>
+    </div> -->
 
     <div id="projects">
       <p id="header"> Projects </p>
-      <p id="projecttitle"> Forest builder </p>
+      <p id="projecttitle"> Honors thesis: "Interactive Visualization of Douglas Fir Forest Growth Using 3-PG" </p>
+      <p id="projectdesc"> My project combines a complex numerical simulation with a user interface and 3D graphics to create an interactive 
+        forest visualization. I created a new implementation of the existing and well-trusted forest growth model 3-PG in C/C++ and added graphics 
+        with OpenGL and a user interface using GLUT. While 3-PG has been added to in many ways over the years since its creation in 1997 (by Dr. Landsberg and 
+        Dr. Waring), there has never been a 3-D visualization for it, and very little in the way of a user interface (most implemtations are in Excel, with a 
+        few in R and a new one in FORTRAN). Basically, you can control and change various input parameters to the simulation and see how they affect the forest
+        in real time. The idea behind this was to add a new layer of discovery and interactivity to the model. I worked with my mentor Dr. Mike Bailey on this project from the spring of 2022 until this May.</p>
+      <p id="projectdesc">Check out the entire thesis here: </p>
+      <a id="projectdesc" href="https://ir.library.oregonstate.edu/concern/honors_college_theses/x920g532g?locale=en">https://ir.library.oregonstate.edu/concern/honors_college_theses/x920g532g?locale=en</a>
+
+      <p id="projecttitle"> Capstone senior group project: Rigid body dynamics driving simulation in Bevy using Rust</p>
+      <p id="projectdesc"> </p>
+        <p id="projecttitle"> Forest builder </p>
       <p id="projectdesc"> Programmed a basic forest creation program in OpenGL. Allows user to place randomly generated
         trees on a plane, then view those trees from an overhead view or a walk-through view. The tree models are some of the first models I ever made in Blender, which is why they
         look... interesting. This was a class project for CS450 (Intro to Computer Graphics).</p>
