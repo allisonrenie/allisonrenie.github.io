@@ -1,0 +1,129 @@
+html
+{
+  font-family: 'Vollkorn', serif;
+}
+
+body
+{
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.link
+{
+  font-size: 26px;
+}
+
+.left-align
+{
+  text-align: left;
+}
+
+.list-link
+{
+  text-align: left;
+  font-size: 20px;
+}
+
+#page-title
+{
+  font-size: 42px;
+}
+
+#header
+{
+  font-size: 30px;
+  text-align: left;
+}
+
+#para
+{
+  font-size: 18px;
+  text-align: left;
+}
+
+#skills
+{
+  font-size: 16px;
+  text-align: left;
+}
+
+#skillheader
+{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#listitem
+{
+  font-size: 16px;
+}
+
+#projecttitle
+{
+  font-size: 22px;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#projectdesc
+{
+  font-size: 18px;
+  text-align: left;
+}
+
+#project-skills
+{
+  font-size: 18px;
+  font-style: italic;
+  text-align: left;
+}
+
+.menu
+{
+display: flex;
+}
+
+.menu-item
+{
+  flex: 1;
+  text-align: center;
+}
+
+.menu-link
+{
+  text-decoration: none;
+  color:black;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.blog-link
+{
+  text-decoration: none;
+  text-align: left;
+  color:#7A5C99;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.menu-link:hover
+{
+  color:darkolivegreen;
+}
+
+.blog-link:hover
+{
+  color:indigo;
+}
+
+.horizontal-line
+{
+  border: none;
+  border-top: 2px solid black;
+  margin: 20px 0;
+}

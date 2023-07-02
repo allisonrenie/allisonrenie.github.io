@@ -3,179 +3,41 @@
   <head>
     <title>Allison Renie Thompson</title>
 
+    <!-- Font is free to use from google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet'>
 
-    <style>
-
-      html
-      {
-        font-family: 'Vollkorn', serif;
-      }
-
-      body
-      {
-          text-align: center;
-          padding-left: 400px;
-          padding-right: 400px;
-      }
-
-      .link
-      {
-        font-size: 26px;
-      }
-
-      #name
-      {
-        font-size: 42px;
-      }
-
-      #header
-      {
-        font-size: 30px;
-      }
-
-      #para
-      {
-        font-size: 18px;
-        text-align: left;
-      }
-
-      #skills
-      {
-        font-size: 16px;
-        text-align: left;
-      }
-
-      #skillheader
-      {
-        font-size: 22px;
-        font-style: italic;
-        font-weight: bold;
-      }
-
-      #listitem
-      {
-        font-size: 16px;
-      }
-
-      #projecttitle
-      {
-        font-size: 22px;
-        text-align: left;
-        font-style: italic;
-        font-weight: bold;
-      }
-
-      #projectdesc
-      {
-        font-size: 16px;
-        text-align: left;
-      }
-
-
-      .menu {
-      display: flex;
-    }
-
-    .menu-item {
-      flex: 1;
-      text-align: center;
-    }
-
-    .menu-item img {
-      max-width: 100%;
-      height: auto;
-      max-height: 50px;
-      border: 2px solid black;
-    }
-
-
-
-    </style>
-
+    <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <p id="name"> Allison Renie Thompson </p>
+    <!-- Title -->
+    <p id="page-title"> Allison Renie Thompson </p>
 
-    <!-- <a href="page1.html">
-      <img src="aboutme.png" alt="Link to Page 1">
-    </a>
-    <p></p>
-    <a href="page2.html">
-      <img src="projects.png" alt="Link to Page 2">
-    </a>
-    <p></p>
-    <a class="link" href="ART_resume_june23.pdf">PDF of my resume</a>
-    <p></p>
-    <a class="link"href="https://www.linkedin.com/in/allison-thompson-182891249/">My LinkedIn profile</a>
-    <p></p> -->
-    
-
+    <!-- Menu of links -->
     <div class="menu">
       <div class="menu-item">
-        <a href="page1.html">
-          <img src="aboutme.png" alt="Link to Page 1">
-        </a>
+        <a class="menu-link" href="aboutme.html">About me</a>
       </div>
 
       <div class="menu-item">
-        <a href="page2.html">
-          <img src="resumelink.png" alt="Link to Page 2">
-        </a>
+        <a class="menu-link" href="ART_resume_june23.pdf">Resume</a>
       </div>
 
       <div class="menu-item">
-        <a href="page3.html">
-          <img src="li.png" alt="Link to Page 2">
-        </a>
+        <a class="menu-link" href="https://github.com/allisonrenie">Github</a>
       </div>
     </div>
 
+    <hr class="horizontal-line">
 
-
-
-
-
-    <!-- <p id="header"> About me </p>
-    <p id="para"> Hi! I just graduated (June 2023) from Oregon State University with an Honors BS in Computer Science and a minor in English. I graduated Summa
-      Cum Laude with a 3.86 GPA. My focus area was in Simulation and Game Programming, which for me meant simulations and graphics generally. I've spent the most
-      time studying graphics and love the challenge and satisfaction of seeing something I programmed move onscreen!
-    </p>
-
-    <p id="header"> Interests </p>
-    <p id="para"> I'm intersted in graphics, physics, simulations, robotics, and where art and computer science meet.
-    I am most interested in backend graphics, especially when they relate to the real world or real world physics.
-    I am also very interested in the natural world and how to replicate it using computer graphics. Outside of computer
-    science, I enjoy reading, sewing, video games (The Witcher 3, Castlevania: Symphony of the Night), hiking, drawing, and learning.  </p>
-
-
-    <p id="header"> Skills </p>
-    <div id="skills">
-      <p id="skillheader"> Skills I am proficient in: </p>
-        <ul>
-          <li id="listitem"> C/C++ </li>
-          <li id="listitem"> OpenGL and GLSL </li>
-          <li id="listitem"> Git and GitHub </li>
-          <li id="listitem"> Working in a Linux environment </li>
-          <li id="listitem"> Writing and communication </li>
-        </ul>
-      <p id="skillheader"> Skills I have some experience in: </p>
-        <ul>
-          <li id="listitem"> OpenMP, SIMD, CUDA, OpenCL </li>
-          <li id="listitem"> Vulkan </li>
-          <li id="listitem"> Rust (learning right now!), Python, Java, HTML, CSS, JavaScript, R, MASM </li>
-          <li id="listitem"> Krita </li>
-          <li id="listitem"> GIMP </li>
-          <li id="listitem"> Blender </li>
-          <li id="listitem"> Bevy Game Engine (an Open Source Rust based game engine) </li>
-          <li id="listitem"> Unreal Engine 5 basics (self taught from the internet) </li>
-        </ul>
-    </div> -->
-
+    <!-- Projects -->
     <div id="projects">
       <p id="header"> Projects </p>
+
+      <p class="left-align"><a class="blog-link" href="blog.html">Check out my current project blog (ASCII terminal renderer)!</a></p>
+
+      <!-- Thesis -->
       <p id="projecttitle"> Honors thesis: "Interactive Visualization of Douglas Fir Forest Growth Using 3-PG" </p>
       <p id="projectdesc"> My project combines a complex numerical simulation with a user interface and 3D graphics to create an interactive 
         forest visualization. I created a new implementation of the existing and well-trusted forest growth model 3-PG in C/C++ and added graphics 
@@ -183,25 +45,45 @@
         Dr. Waring), there has never been a 3-D visualization for it, and very little in the way of a user interface (most implemtations are in Excel, with a 
         few in R and a new one in FORTRAN). Basically, you can control and change various input parameters to the simulation and see how they affect the forest
         in real time. The idea behind this was to add a new layer of discovery and interactivity to the model. I worked with my mentor Dr. Mike Bailey on this project from the spring of 2022 until this May.</p>
+      <p id="project-skills">Skills: C/C++, OpenGL, GLSL, GLUT, user interface creation, creating a simulation, programming and organizing complex equations.</p>
       <p id="projectdesc">Check out the entire thesis here: </p>
       <a id="projectdesc" href="https://ir.library.oregonstate.edu/concern/honors_college_theses/x920g532g?locale=en">https://ir.library.oregonstate.edu/concern/honors_college_theses/x920g532g?locale=en</a>
-
+      
+      <p id="projectdesc">Short presentation: </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=aZ2yYIJ6pVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <p id="projectdesc">Just the demo: </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=vXu9BwvZEl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <!-- Capstone -->
       <p id="projecttitle"> Capstone senior group project: Rigid body dynamics driving simulation in Bevy using Rust</p>
-      <p id="projectdesc"> </p>
-        <p id="projecttitle"> Forest builder </p>
+      <p id="projectdesc"> The idea behind this project was to create an engineering simulation using a game engine to see how well this would work for simulation creators
+        (as opposed to making their own simulations from scratch). We used the game engine Bevy (which is Open Source and Rust based) to create a driving simulation with rigid body 
+        dynamics algorithms. My focus in the project was on the physics and how to simulate the different parts of the car. I learned a lot from this project about simulating a complex machine.
+        This project also gave me the chance to become more familiar with Rust. 
+       </p>
+       <p id="project-skills">Skills: Rust, Bevy game engine, physics (RBDA), creating a simulation, team work and communication.</p>
+
+      <!-- Forest builder -->
+      <p id="projecttitle"> Forest builder </p>
       <p id="projectdesc"> Programmed a basic forest creation program in OpenGL. Allows user to place randomly generated
         trees on a plane, then view those trees from an overhead view or a walk-through view. The tree models are some of the first models I ever made in Blender, which is why they
         look... interesting. This was a class project for CS450 (Intro to Computer Graphics).</p>
+        <p id="project-skills">Skills: C/C++, OpenGL, creating a simple user interface. </p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/9jpkpsxIUgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+      <!-- Moss shader -->
       <p id="projecttitle"> Moss shader </p>
       <p id="projectdesc"> AKA the Mossifier. Programmed a moss shader using GLSL and OpenGL. Esentially, it puts a moss-like texture onto any OBJ file loaded into the program.
         There are a few options to the moss shader, inlcuding a few moss patterns generated using noise. The background textures have normal mapping.
         This was a class project for CS457 (Computer Graphics Shaders). </p>
+        <p id="project-skills">Skills: Creating shaders with GLSL, working with noise, OpenGL. </p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yx2YmisxWpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+      <!-- Spencer goes to space -->
       <p id="projecttitle"> Blender animation: Spencer Goes to Space </p>
       <p id="projectdesc"> This one is a little goofy, but I made this entire animation in Blender, including creating all the models. This was a class project for CS499: Computer Animation. </p>
+      <p id="project-skills">Skills: Blender, 3D modelling, creating an animation with keyframes. </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/_NjeaPKxXeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
