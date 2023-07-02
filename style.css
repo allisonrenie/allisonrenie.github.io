@@ -1,3 +1,4 @@
+/* general */
 html
 {
   font-family: 'Vollkorn', serif;
@@ -24,6 +25,7 @@ body
 {
   text-align: left;
   font-size: 20px;
+  font-style: italic;
 }
 
 #page-title
@@ -43,6 +45,7 @@ body
   text-align: left;
 }
 
+/* main page */
 #skills
 {
   font-size: 16px;
@@ -82,6 +85,34 @@ body
   text-align: left;
 }
 
+/* blog page */
+#about-project
+{
+  font-size: 18px;
+  text-align: left;
+  font-style: italic;
+}
+
+#blog-entry-title
+{
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#blog-entry
+{
+  font-size: 18px;
+  text-align: left;
+}
+
+.blog-img
+{
+  max-width: 50%;
+  height: auto;
+}
+
+/* menu/header stuff */
 .menu
 {
 display: flex;
@@ -104,8 +135,7 @@ display: flex;
 .blog-link
 {
   text-decoration: none;
-  text-align: left;
-  color:#7A5C99;
+  color:#1f7d0c;
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
